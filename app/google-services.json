@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "261634875295",
+    "firebase_url": "https://kozinti-c8dad-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kozinti-c8dad",
+    "storage_bucket": "kozinti-c8dad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261634875295:android:822bc9275adaf5ce4f27aa",
+        "android_client_info": {
+          "package_name": "com.example.kozinti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-Bzodm2FfXq80L8YdBfcUPSTgwl6Zpi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

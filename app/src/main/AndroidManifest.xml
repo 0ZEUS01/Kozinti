@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kozinti">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/dark"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dark"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Dark"
+        tools:targetApi="31">
+
+        <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="${applicationId}.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+
+        <activity
+            android:name=".MainActivity_Guest"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar"/>
+
+        <activity
+            android:name=".EditRecipe"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+
+        <activity
+            android:name=".EditProfile"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+
+        <activity
+            android:name=".YourRecipes"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+
+        <activity
+            android:name=".RecipeDetails"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+
+        <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+
+        <activity
+            android:name=".addNewRecipe"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+
+        <activity
+            android:name=".Register"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+
+    </application>
+
+</manifest>
